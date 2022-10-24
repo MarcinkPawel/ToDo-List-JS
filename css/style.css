@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 *, ::after, ::before {
@@ -11,9 +12,43 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: rgba(189, 188, 188, 0.521);
     
 }
 
 .main {
     flex-basis: 800px;
+    margin: 5%;
+    
+}
+
+.form {
+    
+}
+
+.form__heading {
+    margin: 0;
+    padding: 10px;
+}
+
+.form__addingTask {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form__enterTask {
+    flex-grow: 1;
+}
+
+.form__submit {
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+
+.form__fieldset {
+    margin: 10px 0;
+    border: none;
+    background-color: white;
 }

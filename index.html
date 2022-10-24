@@ -20,7 +20,7 @@
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>To do list</title>
 </head>
 
@@ -28,14 +28,16 @@
     <div class="main">
         <h1 class="main__heading">Tasks List</h1>
         <form class="form">
-            <fieldset>
+            <fieldset class="form__fieldset ">
                 <h2 class="form__heading">Add new task</h2>
-                <input>
-                <button>Add Task</button>
+                <section class="form__addingTask">
+                <input class="form__enterTask">
+                <button class="form__submit">Add Task</button>
+            </section>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__fieldset">
                 <h2 class="form__heading">Tasks List</h2>
-                <ul>
+                <ul class="form__list">
                     <li>My first task</li>
                     <li>Ma second task</li>
                     <li>My third task</li>
