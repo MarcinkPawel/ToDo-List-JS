@@ -22,33 +22,70 @@ html {
     
 }
 
-.form {
-    
-}
 
 .form__heading {
     margin: 0;
     padding: 10px;
+    font-size: 20px;
 }
 
 .form__addingTask {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    padding: 10px
 }
 
 .form__enterTask {
-    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid rgb(221, 212, 212)
 }
 
 .form__submit {
-    flex-grow: 0;
-    flex-basis: 100px;
+    border: none;
+    background-color: teal;
+    color: white;
+    padding:  10px 20px;
 }
 
 .form__fieldset {
-    margin: 10px 0;
+    margin-bottom: 10px;
     border: none;
     background-color: white;
+}
+
+.form__fieldset--heading {
+    margin-bottom: 2px;
+}
+
+.form__list {
+    list-style: none;
+    padding: 0;
+    margin: 20px
+}
+
+.form__listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+
+
+}
+
+.form__delete{
+    width: 30px;
+    height: 30px;
+    background-color:  red;
+    border: none;
+}
+
+.form__done {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
 }
