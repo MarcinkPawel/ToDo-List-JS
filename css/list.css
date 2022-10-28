@@ -1,0 +1,27 @@
+.list {
+    padding: 0;
+}
+
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+}
+
+.list__delete {
+    width: 30px;
+    height: 30px;
+    background-color:  red;
+    border: none;
+}
+
+.list__done {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+}
