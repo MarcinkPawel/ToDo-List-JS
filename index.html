@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/pawelIcon.png">
     <meta property="og:image" content="images/ogImage.png">
-    <meta property="og:title" content="Currency Exchange">
-    <meta property="og:description" content="Hi, here is my small project of a web curency exchange.">
+    <meta property="og:title" content="To do list">
+    <meta property="og:description" content="Hi, here is my small project of a simple To do list.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -31,23 +31,15 @@
 
         <section class="section">
             <h2 class="section__heading">Add new task</h2>
-
-            <div class="section__addingTask">
-                <input class="section__enterTask" placeholder="Enter your task">
-                <button class="section__submit">Add Task</button>
-            </div>
+            <form class="section__addingTask js-newTask">
+                <input class="section__enterTask js-enterTask" placeholder="Enter your task">
+                <button class="section__submit js-submit">Add Task</button>
+            </form>
         </section>
         <section class="section">
             <h2 class="section__heading">Tasks List</h2>
-
             <div class="section__list">
-                <ul class="list">
-                    <li class="list__item"><button class="list__done"> </button> My first task <button
-                            class="list__delete"> </button></li>
-                    <li class="list__item"><button class="list__done"> </button> Ma second task <button
-                            class="list__delete"> </button></li>
-                    <li class="list__item"><button class="list__done"> </button> My third task <button
-                            class="list__delete"> </button></li>
+                <ul class="list js-taskList">
                 </ul>
             </div>
         </section>
