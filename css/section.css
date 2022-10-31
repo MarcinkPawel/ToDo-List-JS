@@ -1,3 +1,10 @@
+.section {
+    padding-bottom: 10px;
+    border: 1px solid rgba(189, 188, 188, 0.521);
+    border-collapse: collapse;
+    background-color: white;
+}
+
 .section__heading {
     margin: 0;
     padding: 10px 20px;
@@ -13,6 +20,12 @@
     background-color: white;
 }
 
+@media(max-width: 767px) {
+    .section__addingTask {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section__enterTask {
     padding: 10px;
     border: 1px solid rgb(221, 212, 212)
@@ -20,17 +33,20 @@
 
 .section__submit {
     border: none;
-    background-color: teal;
+    background-color: rgb(0, 128, 128);
     color: white;
     padding: 10px 20px;
 }
 
-.section {
-    padding-bottom: 10px;
-    border: 1px solid rgba(189, 188, 188, 0.521);
-    border-collapse: collapse;
-    background-color: white;
+.section__submit:hover {
+    background-color: rgba(0, 128, 128, 0.74);
 }
+
+.section__submit:active {
+    background-color: rgba(0, 128, 128, 0.5);
+}
+
+
 
 .section__list {
     list-style: none;
