@@ -5,11 +5,54 @@
     background-color: white;
 }
 
-.section__heading {
+.section__header {
     margin: 0;
+    border-bottom: 1px solid rgba(189, 188, 188, 0.521);
+    display: grid;
+    grid-template-columns: 1fr  auto;
+    grid-template-rows: 50px;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    align-items: center;
+}
+
+.section__heading {
     padding: 10px 20px;
     font-size: 20px;
-    border-bottom: 1px solid rgba(189, 188, 188, 0.521);
+    display: inline-block;
+}
+
+.section__toggle {
+    display: inline-block;
+}
+
+.section__button {
+    border: none;
+    background-color: white;
+    color: rgb(0, 128, 128);
+    padding: 10px 0;
+    margin-right: 10px;
+    align-self: center;
+    transition: 1s;
+}
+
+.section__button:hover {
+    color: rgba(31, 100, 100, 0.74);
+    transform: scale(1.1);
+}
+
+.section__button:active {
+    color: rgba(0, 128, 128, 0.5);
+    transform: scale(1.1);
+}
+
+.section__button:disabled {
+    color: grey;
+    transform: none;
+}
+
+.section__button--hidden {
+    display: none;
 }
 
 .section__addingTask {
@@ -24,6 +67,14 @@
     .section__addingTask {
         grid-template-columns: 1fr;
     }
+
+    .section__header {
+        grid-template-columns: 1fr;
+
+    }
+    .section__toggle {
+        padding-left: 20px;
+    }
 }
 
 .section__enterTask {
@@ -36,17 +87,19 @@
     background-color: rgb(0, 128, 128);
     color: white;
     padding: 10px 20px;
+    transition: 1s;
+    
 }
 
 .section__submit:hover {
     background-color: rgba(0, 128, 128, 0.74);
+    transform: scale(1.1);
 }
 
 .section__submit:active {
     background-color: rgba(0, 128, 128, 0.5);
+    transform: scale(1.1);
 }
-
-
 
 .section__list {
     list-style: none;
