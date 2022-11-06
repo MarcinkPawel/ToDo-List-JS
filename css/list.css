@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.list__item--hidden {
+    display: none;
+}
+
 .list__button {
     width: 30px;
     height: 30px;
@@ -20,6 +24,7 @@
 
 .list__button--done {
     background-color: rgb(0, 128, 0);
+    transition: 1s;
 }
 
 .list__button--done:hover {
@@ -32,6 +37,7 @@
 
 .list__button--delete {
     background-color: rgb(255, 0, 0);
+    transition: 1s;
 }
 
 .list__button--delete:hover {
