@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 *, ::after, ::before {
@@ -14,5 +13,5 @@ html {
     justify-content: center;
     background-color: rgba(189, 188, 188, 0.521);
     word-break: break-word;
-
+    font-family: 'Lato', sans-serif;
 }
